@@ -11,4 +11,8 @@ This is the documentation for the course **Web Programming**.
     - [Task-4](lab-1/task-4.md)
     - [Task-5](lab-1/task-5.md)
 - Lab-2
+    - [Practice-1](lab-2/practice-1.md)
+    - [Practice-2](lab-2/practice-2.md)
+    - [Practice-3](lab-2/practice-3.md)
+    - [Lab-2](lab-2/lab-2.md)
 - Lab-3
