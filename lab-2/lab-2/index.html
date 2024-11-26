@@ -1,0 +1,1233 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../practice-3/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Lab-2 - Web Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Web Docs" class="md-header__button md-logo" aria-label="Web Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab-2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Web Docs" class="md-nav__button md-logo" aria-label="Web Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Web Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab-1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lab-1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-1/task-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task-1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-1/task-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task-2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-1/task-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task-3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-1/task-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task-4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-1/task-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task-5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab-2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab-2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practice-1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practice-2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practice-3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lab-2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lab-2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лабораторная часть
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Для получения максимального балла.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Полезные материалы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сдача работы №2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#youtube-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      YouTube App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users App
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Лабораторная часть
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Для получения максимального балла.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Полезные материалы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сдача работы №2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#youtube-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      YouTube App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users App
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="2">Лабораторная работа 2</h1>
+<h2 id="_1">Задание</h2>
+<h3 id="_2">Лабораторная часть</h3>
+<p>Реализовать веб сервис, в соответствии с вариантом из задания (студент с порядковым номером 6 в списке группы делает 6 вариант, седьмой - вариант номер 1).<br>
+Текст лабораторной работы <a href="https://drive.google.com/file/d/1kp4xcF-6r-g5jvephy69n9XvS-7hU4KT/view?usp=sharing">тут</a>.<br>
+Срок сдачи: **** (включительно)<br></p>
+<p>Обращаем внимание, что <strong>доступна возможность предложить свой индивидуальный вариант</strong> и делать работу по нему. <br>
+Если Вы хотите индивидуальный враиант, советуем не использовать вариант из дисциплины "Адаптивный веб-дизайн" в этой работе, эффективнее Вы сможете его использовать в следующих работах.<br></p>
+<h3 id="_3">Для получения максимального балла.</h3>
+<p>Чтобы продлить срок, необходимо:
+- Реализовать меню (меню с бутсрап - https://www.youtube.com/watch?v=HEPTgggsRgY)
+- Реализвать пагинацию страниц (так себе вариант - https://evileg.com/ru/post/10/ , отличный вариант - https://evileg.com/ru/post/237/)
+- Внедрить поиск по объектам, с которыми настроена пагинация (https://evileg.com/ru/post/21/)</p>
+<h3 id="_4">Полезные материалы</h3>
+<p><a href="https://www.youtube.com/playlist?list=PLlWXhlUMyooaDkd39pknA1-Olj54HtpjX">Фундаментально</a> - плейлист уроков по джанго для тех кто хочет <strong>фундаментально</strong> изучить, как работает джанго веб фремйворк и заниматься этим в будущем.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLF-NY6ldwAWqP4S95brtPHZ5fTCxilgei">Базово</a> - плейлист, который позволит <strong>быстро</strong> понять, как и что работает и <strong>сделать лабу</strong>.</p>
+<h3 id="no2">Сдача работы №2</h3>
+<p>Все файлы загрузить в папку <strong>students/группа/laboratory_works/фамилия_имя/laboratory_work_2</strong>. Инструкция о загрузке работы ниже. Не забывайте о файле gitignor.</p>
+<p>Необходимо сделать отчет. Все отчеты делаются средствами markdown и mkdocs. Инструкция по созданию веб-страничек из markdown средствами mkdocs доступна тут в пункте 3.2.2 https://docs.google.com/document/d/1rIfREFvCB4pp8uF990Tz3PLXRJ5u_w-Y3vLxfXWKoxg/edit?usp=sharing . Краткое описание работы с markdown доступно в пункте 3.1</p>
+<p>Как делать пул-реквест описано в разделе <strong><a href="https://github.com/TonikX/ITMO_ICT_WebDevelopment_2024-2025/blob/master/README.md#%D1%81%D0%B4%D0%B0%D1%87%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82">Сдача работ</a></strong></p>
+<h2 id="_5">Вариант</h2>
+<p>Cайт со списком образовательных и научно-популярных Ютуб каналов.</p>
+<p>Хранится информация о каналах (id, url, title, views, subs, videos, lang, category, theme, icon, ...), пользователях, отзывах.</p>
+<p>Необходимо реализовать следующий функционал:</p>
+<ul>
+<li>Регистрация пользователей</li>
+<li>Пользователь может добавлять новые каналы</li>
+<li>Написание отзывов к каналам с текстом и рейтингом</li>
+<li>Администратор должен иметь возможность одобрять добавление новых каналов средствами Django-admin</li>
+<li>Страница с топом каналов</li>
+<li>Страница канала с описанием и другой информацией</li>
+<li>Работа с API Ютуба</li>
+</ul>
+<h2 id="code">Code</h2>
+<p>settings.py:</p>
+<pre><code class="language-python">...
+INSTALLED_APPS = [
+  ...
+  'youtube',
+  'users',
+]
+...
+# TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
+...
+LOGIN_URL = 'users:login'
+</code></pre>
+<p>urls.py</p>
+<pre><code class="language-python">urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('youtube/', include('youtube.urls')),
+    path('users/', include('users.urls', namespace='users'))
+]
+handler404 = page_not_found
+</code></pre>
+<h3 id="youtube-app">YouTube App</h3>
+<p>admin.py:</p>
+<pre><code class="language-python">from django.contrib import admin
+
+from .models import Channel, Review
+
+class ChannelAdmin(admin.ModelAdmin):
+  list_display = ('title', 'user', 'is_approved', 'time_create')
+  ordering = ('-time_create', 'title')
+  list_editable = ('is_approved',)
+
+class ReviewAdmin(admin.ModelAdmin):
+  list_display = ('channel', 'user', 'rating', 'time_create')
+  list_display_links = ('channel', 'user')
+  ordering = ('-time_create', 'channel')
+
+admin.site.register(Channel, ChannelAdmin)
+admin.site.register(Review, ReviewAdmin)
+</code></pre>
+<p>forms.py:</p>
+<pre><code class="language-python">from django import forms
+from .models import Channel, Review
+
+class AddChannelForm(forms.ModelForm):
+  class Meta:
+    model = Channel
+    fields = ['url', 'lang', 'category', 'theme']
+
+class AddReviewForm(forms.ModelForm):
+  class Meta:
+    model = Review
+    fields = ['rating', 'text']
+</code></pre>
+<p>urls.py:</p>
+<pre><code class="language-python">from django.urls import path, re_path
+from . import views
+
+urlpatterns = [
+  path('', views.index, name='home'),
+  path('top/', views.top, name='top'),
+  re_path(r'^channel/(?P&lt;channel_id&gt;[a-zA-Z0-9_-]{24})/$', views.channel, name='channel'),
+  path('channel/add/', views.add_channel, name='add-channel'),
+  re_path(r'^add-review/(?P&lt;channel_id&gt;[a-zA-Z0-9_-]{24})/$', views.add_review, name='add-review'),
+]
+</code></pre>
+<p>templatetags/youtube_tags.py</p>
+<pre><code class="language-python">from django import template
+
+register = template.Library()
+
+@register.filter()
+def intformat(n):
+  return ((f'{str(n)[:-9]}.{str(n)[-9]}B' if n &gt;= 1000000000 else f'{str(n)[:-6]}.{str(n)[-6]}M') if n &gt;= 1000000 else f'{str(n)[:-3]}.{str(n)[-3]}K') if n &gt;= 1000 else n
+</code></pre>
+<p>models.py:</p>
+<pre><code class="language-python">from django.db import models
+from django.urls import reverse
+from django.conf import settings
+
+class Channel(models.Model):
+  CATEGORIES = (
+    ('popsci', 'Научпоп'),
+    ('edu', 'Образование'),
+  )
+  THEMES = (
+    ('all', 'Разное'),
+    ('it', 'IT'),
+    ('programming', 'Программирование'),
+    ('physics', 'Физика'),
+    ('chemistry', 'Химия'),
+    ('space', 'Космос'),
+    ('math', 'Математика'),
+    ('history', 'История'),
+    ('biology', 'Биология'),
+    ('medicine', 'Медицина'),
+    ('geography', 'География'),
+    ('electronics', 'Электроника'),
+    ('social', 'Обществознание'),
+    ('economics', 'Экономика'),
+    ('english', 'Английский')
+  )
+  LANGS = (
+    ('ru', '🇷🇺'),
+    ('en', '🇺🇸'),
+    # 'es': '🇪🇸',
+    # 'de': '🇩🇪',
+    # 'fr': '🇫🇷',
+    # 'pt': '🇧🇷'
+  )
+
+  channel_id = models.CharField(max_length=24, unique=True, db_index=True, primary_key=True)
+  url = models.CharField(max_length=100, unique=True) # 56
+  title = models.CharField(max_length=255)
+  views = models.PositiveBigIntegerField()
+  subs = models.PositiveIntegerField()
+  videos = models.PositiveIntegerField()
+  lang = models.CharField(max_length=2, choices=LANGS) # default='ru'
+  category = models.CharField(max_length=20, choices=CATEGORIES) # default='popsci'
+  theme = models.CharField(max_length=20, choices=THEMES, default='all')
+  icon_default = models.CharField(max_length=200) # 103
+  icon_medium = models.CharField(max_length=200)
+  icon_high = models.CharField(max_length=200)
+  description = models.TextField(blank=True)
+  is_approved = models.BooleanField(default=False) # or null, 3 types?
+  user = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE, blank=True, null=True) # SET_NULL
+  time_create = models.DateTimeField(auto_now_add=True)
+  time_update = models.DateTimeField(auto_now=True)
+
+  def __str__(self):
+    return self.title
+
+  def get_absolute_url(self):
+    return reverse('channel', kwargs={'channel_id': self.channel_id})
+
+class Review(models.Model):
+  user = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE)
+  channel = models.ForeignKey(Channel, models.CASCADE)
+  rating = models.PositiveSmallIntegerField(choices=((i,i) for i in range(1, 11)))
+  text = models.TextField(blank=True)
+  time_create = models.DateTimeField(auto_now_add=True)
+  time_update = models.DateTimeField(auto_now=True)
+</code></pre>
+<p>templates:
+- base.html
+- add_channel.html
+- channel.html
+- index.html
+- top.html</p>
+<p>base.html</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;{{ title }}&lt;/title&gt;
+  &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css&quot;&gt; --&gt;
+  &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css&quot;&gt; --&gt;
+  &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css&quot;&gt; --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css&quot;&gt;
+  &lt;style&gt;
+    .avatar {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;&lt;a href=&quot;{% url 'home' %}&quot;&gt;Educational YouTube&lt;/a&gt;&lt;/h1&gt;
+    &lt;a href=&quot;{% url 'home' %}&quot;&gt;Home&lt;/a&gt; / 
+    &lt;a href=&quot;{% url 'top' %}&quot;&gt;Top&lt;/a&gt; / 
+    &lt;a href=&quot;{% url 'add-channel' %}&quot;&gt;Add Channel&lt;/a&gt; / 
+    {% if user.is_authenticated %}
+    &lt;a href=&quot;{% url 'users:logout' %}&quot;&gt;Log out&lt;/a&gt; / {{ user.username }} 
+    {% else %}
+    &lt;a href=&quot;{% url 'users:login' %}&quot;&gt;Log in&lt;/a&gt; / &lt;a href=&quot;{% url 'users:register' %}&quot;&gt;Register&lt;/a&gt;
+    {% endif %}
+  &lt;/header&gt;
+{% block content %} {% endblock %}
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>add_channel.html</p>
+<pre><code class="language-html">{% extends 'base.html' %}
+{% load youtube_tags %}
+
+{% block content %}
+
+&lt;h2&gt;Add Channel&lt;/h2&gt;
+&lt;form action=&quot;&quot; method=&quot;POST&quot;&gt;
+  {% csrf_token %}
+  {{ form.as_p }}
+  &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+
+&lt;h3&gt;My Channels ({{ channels|length }})&lt;/h3&gt;
+{% if channels %}
+&lt;table&gt;
+&lt;tr&gt;
+  &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;Channel&lt;/th&gt;
+  &lt;th&gt;Subs&lt;/th&gt;
+  &lt;th&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+{% for channel in channels %}
+&lt;tr&gt;
+  &lt;td&gt;
+    &lt;a href=&quot;{{ channel.get_absolute_url }}&quot;&gt;
+    &lt;img src=&quot;{{ channel.icon_medium }}&quot; width=&quot;40&quot; height=&quot;40&quot; style=&quot;margin-bottom: 0 !important; border-radius: 50% !important;&quot;&gt;&lt;/a&gt;
+  &lt;/td&gt;
+  &lt;td&gt;&lt;a href=&quot;{{ channel.get_absolute_url }}&quot;&gt;{{ channel.title }}&lt;/a&gt;&lt;/td&gt;
+  &lt;td&gt;{{ channel.subs|intformat }}&lt;/td&gt;
+  {% if channel.is_approved %}
+  &lt;td style=&quot;color:green;&quot;&gt;Approved&lt;/td&gt;
+  {% else %}
+  &lt;td style=&quot;color:red;&quot;&gt;Not Approved&lt;/td&gt;
+  {% endif %}
+&lt;/tr&gt;
+{% endfor %}
+&lt;/table&gt;
+{% endif %}
+
+{% endblock %}
+</code></pre>
+<p>channel.html</p>
+<pre><code class="language-html">{% extends 'base.html' %}
+{% load youtube_tags %}
+
+{% block content %}
+&lt;h2&gt;{{ channel.title }}&lt;/h2&gt;
+&lt;a href=&quot;{{ channel.url }}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;{{ channel.icon_high }}&quot; class=&quot;avatar&quot;&gt;&lt;/a&gt;
+&lt;p&gt;{{ channel.get_lang_display }} / {{ channel.get_category_display }} / {{ channel.get_theme_display }} /
+{{ channel.subs|intformat }} subs / {{ channel.views|intformat }} views / {{ channel.videos|intformat }} videos
+&lt;/p&gt;
+&lt;p&gt;{{ channel.description|linebreaks|urlize }}&lt;/p&gt;
+&lt;p&gt;Added by {{ channel.user.username|default:&quot;anon&quot; }} at {{ channel.time_create }}&lt;/p&gt;
+
+{% if user.is_authenticated %}
+&lt;h3&gt;Write Review&lt;/h3&gt;
+&lt;form action=&quot;/youtube/add-review/{{channel.channel_id}}/&quot; method=&quot;POST&quot;&gt;
+  {% csrf_token %}
+  {{ form.as_p }}
+&lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+{% endif %}
+
+&lt;h3&gt;Reviews ({{ reviews|length }})&lt;/h3&gt;
+{% for review in reviews %}
+&lt;p&gt;&lt;b&gt;{{ review.rating }}&lt;/b&gt; / &lt;b&gt;{{ review.user.username }}&lt;/b&gt; / {{ review.time_create }}
+{{ review.text|linebreaks }}&lt;/p&gt;
+{% if not forloop.last %}
+&lt;hr&gt;
+{% endif %}
+{% endfor %}
+
+{% endblock %}
+</code></pre>
+<p>index.html</p>
+<pre><code class="language-html">{% extends 'base.html' %}
+
+{% block content %} 
+&lt;h2&gt;Home&lt;/h2&gt;
+&lt;p&gt;На этом сайте собраны образовательные и научно-популярные &lt;a href=&quot;{% url 'top' %}&quot;&gt;ютуб каналы&lt;/a&gt; на русском и английском языках.&lt;/p&gt;
+&lt;p&gt;После &lt;a href=&quot;{% url 'users:register' %}&quot;&gt;регистрации&lt;/a&gt; или &lt;a href=&quot;{% url 'users:login' %}&quot;&gt;входа в аккаунт&lt;/a&gt; вы сможете &lt;a href=&quot;{% url 'add-channel' %}&quot;&gt;предложить&lt;/a&gt; свои каналы.&lt;/p&gt;
+&lt;p&gt;Вы также сможете оставлять отзывы на странице канала.&lt;/p&gt;
+{% endblock %}
+</code></pre>
+<p>top.html</p>
+<pre><code class="language-html">{% extends 'base.html' %}
+{% load youtube_tags %}
+
+{% block content %}
+&lt;h2&gt;List of educational YouTube channels&lt;/h2&gt;
+&lt;table&gt;
+&lt;tr&gt;
+  &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;Channel&lt;/th&gt;
+  &lt;th&gt;Subs&lt;/th&gt;
+  &lt;th&gt;Views&lt;/th&gt;
+  &lt;th&gt;Videos&lt;/th&gt;
+&lt;/tr&gt;
+{% for channel in channels %}
+&lt;tr&gt;
+  &lt;td&gt;
+    &lt;a href=&quot;{{ channel.get_absolute_url }}&quot;&gt;
+    &lt;img src=&quot;{{ channel.icon_medium }}&quot; width=&quot;40&quot; height=&quot;40&quot; style=&quot;margin-bottom: 0 !important; border-radius: 50% !important;&quot;&gt;&lt;/a&gt;
+  &lt;/td&gt;
+  &lt;td&gt;&lt;a href=&quot;{{ channel.get_absolute_url }}&quot;&gt;{{ channel.title }}&lt;/a&gt;&lt;/td&gt;
+  &lt;td&gt;{{ channel.subs|intformat }}&lt;/td&gt;
+  &lt;td&gt;{{ channel.views|intformat }}&lt;/td&gt;
+  &lt;td&gt;{{ channel.videos|intformat }}&lt;/td&gt;
+&lt;/tr&gt;
+{% endfor %}
+&lt;/table&gt;
+{% endblock %}
+</code></pre>
+<h3 id="users-app">Users App</h3>
+<p>forms.py</p>
+<pre><code class="language-python">from django import forms
+from django.contrib.auth import get_user_model
+
+class LoginUserForm(forms.Form):
+  username = forms.CharField(label='Login', widget=forms.TextInput())
+  password = forms.CharField(label='Password', widget=forms.PasswordInput())
+
+class RegisterUserForm(forms.ModelForm):
+  username = forms.CharField(label='Login', widget=forms.TextInput())
+  password = forms.CharField(label='Password', widget=forms.PasswordInput())
+  password2 = forms.CharField(label='Repeat Password', widget=forms.PasswordInput())
+
+  class Meta:
+    model = get_user_model()
+    fields = ['username', 'password']
+
+  def clean_password2(self):
+    cd = self.cleaned_data
+    if cd['password'] != cd['password2']:
+      raise forms.ValidationError(&quot;Passwords don't match&quot;)
+    return cd['password']
+</code></pre>
+<p>urls.py</p>
+<pre><code class="language-python">from django.urls import path
+from . import views
+
+app_name = 'users'
+
+urlpatterns = [
+  path('login/', views.login_user, name='login'),
+  path('logout/', views.logout_user, name='logout'),
+  path('register/', views.register, name='register'),
+]
+</code></pre>
+<p>views.py</p>
+<pre><code class="language-python">from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
+from django.contrib.auth import authenticate, login, logout
+
+from .forms import LoginUserForm, RegisterUserForm
+
+def login_user(request):
+  if request.method == 'POST':
+    form = LoginUserForm(request.POST)
+    if form.is_valid():
+      cd = form.cleaned_data
+      user = authenticate(request, username=cd['username'], password=cd['password'])
+      if user and user.is_active:
+        login(request, user)
+        return HttpResponseRedirect(reverse('home'))
+  else:
+    form = LoginUserForm()
+  return render(request, 'users/login.html', {'form': form})
+
+def logout_user(request):
+  logout(request)
+  return HttpResponseRedirect(reverse('users:login'))
+
+def register(request):
+  if request.method == 'POST':
+    form = RegisterUserForm(request.POST)
+    if form.is_valid():
+      user = form.save(commit=False)
+      user.set_password(form.cleaned_data['password'])
+      user.save()
+      return HttpResponseRedirect(reverse('users:login'))
+  else:
+    form = RegisterUserForm()
+  return render(request, 'users/register.html', {'form': form})
+</code></pre>
+<p>login.html</p>
+<pre><code class="language-html">{% extends 'base.html' %}
+
+{% block content %}
+
+&lt;h2&gt;Log in&lt;/h2&gt;
+&lt;form action=&quot;&quot; method=&quot;POST&quot;&gt;
+  {% csrf_token %}
+  {{ form.as_p }}
+  &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+
+{% endblock %}
+</code></pre>
+<p>register.html</p>
+<pre><code class="language-html">{% extends 'base.html' %}
+
+{% block content %}
+
+&lt;h2&gt;Register&lt;/h2&gt;
+&lt;form action=&quot;&quot; method=&quot;POST&quot;&gt;
+  {% csrf_token %}
+  {{ form.as_p }}
+  &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
+
+{% endblock %}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
