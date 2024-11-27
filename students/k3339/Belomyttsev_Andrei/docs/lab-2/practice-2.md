@@ -92,14 +92,6 @@ urlpatterns = [
 ]
 ```
 
-.py:
-```python
-```
-
-.py:
-```python
-```
-
 car_create.html:
 ```html
 ...
