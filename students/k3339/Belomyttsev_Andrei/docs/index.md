@@ -20,4 +20,3 @@ This is the documentation for the course **Web Programming**.
     - [Practice-2](lab-3/practice-2.md)
     - [Practice-3](lab-3/practice-3.md)
     - [Lab-3](lab-3/lab-3.md)
-- Lab-3
